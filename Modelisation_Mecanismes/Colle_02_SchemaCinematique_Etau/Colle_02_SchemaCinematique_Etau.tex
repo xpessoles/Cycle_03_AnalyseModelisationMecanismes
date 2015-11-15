@@ -1,0 +1,128 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={CIN : Cinématique du solide},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+    
+\input{style/new_style}
+\input{style/macros_SII}
+
+\usepackage{multicol}
+\fichetrue
+%\fichefalse
+
+\proftrue
+%\proffalse
+
+\tdtrue
+%\tdfalse
+
+\courstrue
+\coursfalse
+
+\def\discipline{Sciences \\Industrielles de \\ l'Ingénieur}
+\def\xxtete{Sciences Industrielles de l'Ingénieur}
+
+\def\classe{PTSI}
+\def\xxnumpartie{Cycle 3}
+\def\xxpartie{Étude cinématique des systèmes de solides de la chaîne d'énergie  \\
+Analyser, Modéliser, Résoudre}
+
+\def\xxnumchapitre{Chapitre 2}
+\def\xxchapitre{}%Étude des chaînes fermées : Détermination des lois Entrée -- Sortie}
+
+\def\xxtitreexo{Étau orientable}
+\def\xxsourceexo{}%\hspace{.2cm} D'après concours Mines-Ponts -- 2013.}
+
+
+\def\xxposongletx{2}
+\def\xxposonglettext{1.45}
+\def\xxposonglety{20}
+\def\xxonglet{Part. 1 -- Ch. 3}
+
+\def\xxactivite{Colle 1}
+\def\xxauteur{\textsl{Xavier Pessoles}}
+
+\def\xxcompetences{%
+\textsl{%
+\textbf{Savoirs et compétences :}\\
+%\noindent \textbf{Résoudre :} à partir des modèles retenus :
+\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+\item \textit{Mod2 -- C12} : modélisation cinématique des liaisons entre solides;
+\item \textit{Mod2 -- C14} : modèle cinématique d’un mécanisme;
+\item \textit{Com1 -- C2} : schémas cinématique, d’architecture, technologique.
+\end{itemize}
+}}
+
+\def\xxfigures{
+%\includegraphics[width=.8\textwidth]{images/prot_01}
+}%figues de la page de garde
+
+\def\xxpied{%
+Partie 3 -- Étude cinématique des systèmes  \\
+Ch 5 : Cinématique du solide -- \xxactivite%
+}
+
+
+\setcounter{secnumdepth}{5}
+%---------------------------------------------------------------------------
+
+
+\begin{document}
+%\chapterimage{png/Fond_Cin}
+\input{style/new_pagegarde}
+\vspace{10cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+
+\def\columnseprulecolor{\color{ocre}}
+\setlength{\columnseprule}{0.4pt} 
+\begin{multicols}{2}
+\subsection*{Mise en situation}
+
+Le dessin d’ensemble est donné en fin de paragraphe.
+Ce mécanisme, monté sur la table d’une perceuse, permet :
+\begin{itemize}
+\item le serrage de la pièce à usiner entre les mors 5 et 6 ;
+\item l’orientation de la pièce par rapport à l’axe de la perceuse.
+\end{itemize}
+Cette orientation se fait par rotation autour de deux axes $\left(O,\vect{x}\right)$ et $\left(O,\vect{z}\right)$ conformément au schéma ci-dessous.
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/fig_01}
+\end{center}
+
+
+\subsection*{Description complémentaire du mécanisme}
+\begin{itemize}
+\item Les mors rapportés 5 et 6 sont fixés rigidement par vis respectivement sur les mors 4 et 9.
+\item L’écrou en bronze 10 est monté par assemblage forcé sur 9 (liaison complète).
+\item La douille en bronze 13 et le cylindre 18sont montés par assemblage forcé sur 4 (ajustement serré).
+\item La liaison de 4/2 peut être rendue temporairement complète par serrage (solution non représentée sur le
+dessin).
+\item La désignation « H7g6 » indique que le mouvement de translation est possible entre deux pièces. 
+\end{itemize}
+
+\subsection*{Travail à réaliser}
+
+\subparagraph{}\textit{Le volant 14 est en liaison complète par rapport à la vis 11. Donner la désignation des pièces 15, 16 et
+17.}
+\subparagraph{}\textit{Quel est le rôle des mors rapportés 5 et 6 ?}
+\subparagraph{}\textit{Quel est le rôle de la douille 13 ?}
+\subparagraph{}\textit{Quel est le rôle de la rondelle 12 ?}
+\subparagraph{}\textit{Quel est le rôle du boulon 19 dont la tête carrée est à l’intérieur d’une rainure circulaire ?}
+\subparagraph{}\textit{Définir les sous-ensembles cinématiques : pour cela colorier avec des couleurs différentes le dessin
+d’ensemble.}
+\subparagraph{}\textit{Définir les liaisons entre ces sous-ensembles : faites sous la forme [Couleur1/Couleur2 a liaison pivot
+par exemple].}
+\subparagraph{}\textit{Tracer le schéma cinématique minimal en représentation plane.}
+\end{multicols}
+
+
+\begin{center}
+\includegraphics[height=\textheight]{images/plan}
+\end{center}
+
+\end{document}
+
+
