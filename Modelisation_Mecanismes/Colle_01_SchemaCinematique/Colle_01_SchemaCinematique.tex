@@ -1,0 +1,111 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={CIN : Cinématique du solide},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+    
+\input{style/new_style}
+\input{style/macros_SII}
+
+\usepackage{multicol}
+\fichetrue
+%\fichefalse
+
+\proftrue
+%\proffalse
+
+\tdtrue
+%\tdfalse
+
+\courstrue
+\coursfalse
+
+\def\discipline{Sciences \\Industrielles de \\ l'Ingénieur}
+\def\xxtete{Sciences Industrielles de l'Ingénieur}
+
+\def\classe{PTSI}
+\def\xxnumpartie{Partie 3}
+\def\xxpartie{Étude cinématique des systèmes de solides de la chaîne d'énergie  \\
+Analyser, Modéliser, Résoudre}
+
+\def\xxnumchapitre{Chapitre 4}
+\def\xxchapitre{Étude des chaînes fermées : Détermination des lois Entrée -- Sortie}
+
+\def\xxtitreexo{Robinet à pointeau}
+\def\xxsourceexo{}%\hspace{.2cm} D'après concours Mines-Ponts -- 2013.}
+
+
+\def\xxposongletx{2}
+\def\xxposonglettext{1.45}
+\def\xxposonglety{20}
+\def\xxonglet{Part. 1 -- Ch. 3}
+
+\def\xxactivite{Colle 1}
+\def\xxauteur{\textsl{Xavier Pessoles}}
+
+\def\xxcompetences{%
+\textsl{%
+\textbf{Savoirs et compétences :}\\
+%\noindent \textbf{Résoudre :} à partir des modèles retenus :
+\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+\item \textit{Mod2 -- C12} : modélisation cinématique des liaisons entre solides;
+\item \textit{Mod2 -- C14} : modèle cinématique d’un mécanisme;
+\item \textit{Com1 -- C2} : schémas cinématique, d’architecture, technologique.
+\end{itemize}
+}}
+
+\def\xxfigures{
+\includegraphics[width=.8\textwidth]{images/prot_01}
+}%figues de la page de garde
+
+\def\xxpied{%
+Partie 3 -- Étude cinématique des systèmes  \\
+Ch 5 : Cinématique du solide -- \xxactivite%
+}
+
+
+\setcounter{secnumdepth}{5}
+%---------------------------------------------------------------------------
+
+
+\begin{document}
+%\chapterimage{png/Fond_Cin}
+\input{style/new_pagegarde}
+\vspace{10cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+
+\def\columnseprulecolor{\color{ocre}}
+\setlength{\columnseprule}{0.4pt} 
+\begin{multicols}{2}
+\subsection*{Présentation}
+
+Les diagrammes suivantes proposent une description sommaire d'un robinet à pointeau.
+\begin{center}
+\includegraphics[width=\linewidth]{images/blocs}
+\includegraphics[width=\linewidth]{images/Exigences}
+\end{center}
+
+\subsection*{Étude technologique}
+\subparagraph{}\textit{Donner la fonction de la pièce 6 et son nom.}
+\subparagraph{}\textit{Donner le mouvement relatif de la pièce 5 par rapport à la pièce 4.}
+\subparagraph{}\textit{Donner le rôle des pièces 9, 8, 7. }
+\subparagraph{}\textit{Quel est l’avantage d’avoir un siège (la pièce 2) démontable ?}
+%\subparagraph{}\textit{Il y a sur le dessin une remarque « trou à déplacer à gauche ». Quelle est l’utilité de ce trou et pourquoi cette remarque ?
+\subparagraph{}\textit{La pièce 3 est hachurée de façon particulière : quelle est la signification ?}
+\subparagraph{}\textit{En quoi le montage de la pièce 10 sur la pièce 3 peut-il être amélioré ?}
+\subparagraph{}\textit{Pourquoi la pièce 3 n’est pas de diamètre constant sur toute sa longueur ?}
+
+\subsection*{Étude cinématique}
+\subparagraph{}\textit{En utilisant les liaisons élémentaires et normalisées vues en cours donner le schéma cinématique représentant le fonctionnement du robinet à pointeau.}
+
+\end{multicols}
+
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/plan_robinet}
+\end{center}
+
+\end{document}
+
+
