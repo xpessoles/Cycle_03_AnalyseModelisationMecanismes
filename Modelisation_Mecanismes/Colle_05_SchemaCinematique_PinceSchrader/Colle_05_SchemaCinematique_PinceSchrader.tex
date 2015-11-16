@@ -1,0 +1,150 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={CIN : Cinématique du solide},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+    
+\input{style/new_style}
+\input{style/macros_SII}
+
+\usepackage{multicol}
+\fichetrue
+%\fichefalse
+
+\proftrue
+%\proffalse
+
+\tdtrue
+%\tdfalse
+
+\courstrue
+\coursfalse
+
+\def\discipline{Sciences \\Industrielles de \\ l'Ingénieur}
+\def\xxtete{Sciences Industrielles de l'Ingénieur}
+
+\def\classe{PTSI}
+\def\xxnumpartie{Cycle 3}
+\def\xxpartie{Étude cinématique des systèmes de solides de la chaîne d'énergie  \\
+Analyser, Modéliser, Résoudre}
+
+\def\xxnumchapitre{Chapitre 2}
+\def\xxchapitre{}%Étude des chaînes fermées : Détermination des lois Entrée -- Sortie}
+
+\def\xxtitreexo{Butée micrométrique}
+\def\xxsourceexo{}%\hspace{.2cm} D'après ressources de JP Pupier.}
+
+
+\def\xxposongletx{2}
+\def\xxposonglettext{1.45}
+\def\xxposonglety{20}
+\def\xxonglet{Part. 1 -- Ch. 3}
+
+\def\xxactivite{Colle 5}
+\def\xxauteur{\textsl{Xavier Pessoles}}
+
+\def\xxcompetences{%
+\textsl{%
+\textbf{Savoirs et compétences :}\\
+%\noindent \textbf{Résoudre :} à partir des modèles retenus :
+\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+\item \textit{Mod2 -- C12} : modélisation cinématique des liaisons entre solides;
+\item \textit{Mod2 -- C14} : modèle cinématique d’un mécanisme;
+\item \textit{Com1 -- C2} : schémas cinématique, d’architecture, technologique.
+\end{itemize}
+}}
+
+\def\xxfigures{
+%\includegraphics[width=.8\textwidth]{images/prot_01}
+}%figues de la page de garde
+
+\def\xxpied{%
+Partie 3 -- Étude cinématique des systèmes  \\
+Ch 5 : Cinématique du solide -- \xxactivite%
+}
+
+
+\setcounter{secnumdepth}{5}
+%---------------------------------------------------------------------------
+
+
+\begin{document}
+%\chapterimage{png/Fond_Cin}
+\input{style/new_pagegarde}
+\vspace{10cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+
+\def\columnseprulecolor{\color{ocre}}
+\setlength{\columnseprule}{0.4pt} 
+\begin{multicols}{2}
+\subsection*{Mise en situation}
+La pince ci-contre est la pince de préhension d’un bras manipulateur utilisé pour déplacer des objets d’un poste à l’autre. Il s’agit d’une pince pneumatique simple effet (Fermeture par une commande pneumatique ouverture automatique par ressort). 
+
+Cette pince est munie d’un capteur informant la partie commande du robot de la position de la pince.
+
+Cette pince est décrite par un dessin d’ensemble en fin de document.
+
+
+\subsection*{Travail à réaliser}
+\subparagraph{}\textit{Comprendre le fonctionnement de la pince.}
+
+\subparagraph{}\textit{Sur le premier dessin d’ensemble et à l’aide de la nomenclature identifier et colorier chacune des pièces.}
+
+\subparagraph{}\textit{Définir les sous-ensembles cinématiques : pour cela colorier avec des couleurs différentes le deuxième dessin d’ensemble.}
+
+\subparagraph{}\textit{Définir les liaisons entre ces sous-ensembles.}
+
+\subparagraph{}\textit{Tracer le schéma cinématique minimal en représentation plane.}
+
+
+
+\subparagraph{}\textit{Décrire le fonctionnement du coupe tube.}
+
+\subparagraph{}\textit{Tracer le schéma cinématique. Pour cela :
+\begin{itemize}
+\item identifier les classes d’équivalence cinématique;
+\item tracer le graphe de structure;
+\item tracer le schéma cinématique.
+\end{itemize}}
+
+\begin{center}
+\begin{tabular}{|c|c||c}
+\hline
+21	&4&	Anneau élastique	 \\ \hline
+20	&1&	Doigt inférieur	9	 \\ \hline
+19	&1&	Doigt supérieur	 \\ \hline
+18	&1&	Axe de doigts 19	 \\ \hline
+17	&2&	Ressort	6 \\ \hline
+16	&1&	Axe de doigts 20 \\ \hline
+15	&1&	Biellette inférieure	 \\ \hline
+14	&1&	Axe de biellette 15	 \\ \hline
+13	&1&	Biellette supérieure	 \\ \hline
+12	&1&	Axe de biellette 13	 \\ \hline
+11	&1&	Axe du piston \\ \hline
+10	&1&	Rondelle frein \\ \hline
+9	&1&	Écrou Hm M 8 \\ \hline
+8	&1&	Capteur fin de course \\ \hline
+7	&1&	Piston \\ \hline
+6	&1&	Joint d’étanchéité \\ \hline
+5	&1&	Raccord d’arrivée d’air \\ \hline
+4	&1&	Joint torique \\ \hline
+3	&1&	Couvercle \\ \hline
+2	&1&	Anneau élastique \\ \hline
+1	&1&	Corps \\ \hline
+\hline
+\textbf{Rep} & \textbf{Nbr} & \textbf{Désignation} \\ \hline
+\end{tabular}
+\end{center}
+
+
+\end{multicols}
+
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/plan}
+\end{center}
+
+\end{document}
+
+
