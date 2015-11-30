@@ -1,0 +1,126 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={CIN : Cinématique du solide},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+    
+\input{style/new_style}
+\input{style/macros_SII}
+
+\usepackage{multicol}
+\fichetrue
+%\fichefalse
+
+%\proftrue
+\proffalse
+
+\tdtrue
+%\tdfalse
+
+\courstrue
+\coursfalse
+
+\def\discipline{Sciences \\Industrielles de \\ l'Ingénieur}
+\def\xxtete{Sciences Industrielles de l'Ingénieur}
+
+\def\classe{PTSI}
+\def\xxnumpartie{Cycle 3}
+\def\xxpartie{Analyse et modélisation des contacts entre solides}
+
+\def\xxnumchapitre{Chapitre 1}
+\def\xxchapitre{Présentation des outils de la communication technique}%Étude des chaînes fermées : Détermination des lois Entrée -- Sortie}
+
+\def\xxtitreexo{Contacteur de porte}
+\def\xxsourceexo{\hspace{.2cm} D'après ressources de JP Pupier.}
+
+
+\def\xxposongletx{2}
+\def\xxposonglettext{1.45}
+\def\xxposonglety{20}
+\def\xxonglet{Part. 3 -- Ch. 1}
+
+\def\xxactivite{Colle 6}
+\def\xxauteur{\textsl{Xavier Pessoles}}
+
+\def\xxcompetences{%
+\textsl{%
+%\textbf{Savoirs et compétences :}\\
+%%\noindent \textbf{Résoudre :} à partir des modèles retenus :
+%\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+%\item \textit{Mod2 -- C12} : modélisation cinématique des liaisons entre solides;
+%\end{itemize}
+}}
+
+\def\xxfigures{
+\includegraphics[width=.8\textwidth]{images/fig_01}
+}%figues de la page de garde
+
+\def\xxpied{%
+Cycle 3 -- Analyse et modélisation des contacts entre solides \\
+Ch. 1 : Présentation des outils de la communication technique -- \xxactivite%
+}
+
+
+\setcounter{secnumdepth}{5}
+%---------------------------------------------------------------------------
+
+
+\begin{document}
+%\chapterimage{png/Fond_Cin}
+\input{style/new_pagegarde}
+\vspace{7cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+
+\def\columnseprulecolor{\color{ocre}}
+\setlength{\columnseprule}{0.4pt} 
+
+\ifprof
+\begin{center}
+\includegraphics[width=.8\linewidth]{images/corr_01}
+\includegraphics[width=.8\linewidth]{images/corr_02}
+\end{center}
+
+\else
+\begin{multicols}{2}
+\subsection*{Mise en situation}
+Cet appareil s’intègre dans un dispositif de sécurité destiné à donner l’information «porte fermée» sur un train urbain.
+
+Le dessin d’ensemble fourni représente le poussoir. Il permet de faire la liaison entre la ferrure en pente et le contacteur avec une possibilité de réglage aisé du déclenchement électrique.
+
+%Sur un  format A4  d’axe vertical, on définit deux colonnes d’égale largeur, une pour la pièce 1, l’autre pour la pièce 2.
+
+La vue qui sera considérée comme vue de face dans les deux cas est la vue correspondant à la coupe AA du dessin d’ensemble (celle située à gauche du dessin d’ensemble) .
+
+\subparagraph{}\textit{Dessiner la pièce 1 : vue de face en demi-coupe AA (partie coupée à gauche par rapport à l’axe vertical de la pièce), et vue de dessous.}
+
+\subparagraph{}\textit{Dessiner la pièce 2 : vue de face et vue de dessous.}
+
+\begin{center}
+\begin{tabular}{|c|c|p{.6\linewidth}|}
+\hline
+9	&1&	Goupille mécanindus diamètre 4 long 25\\ \hline
+8	&1&	\\ \hline
+7	&1&	Écrou H M6\\ \hline
+6	&1&	 \\ \hline
+5	&1&	Ressort 7 spires\\ \hline
+4	&1&	Axe \\ \hline
+3	&1&	Roulette \\ \hline
+2	&1&	Tige \\ \hline
+1	&1&	Corps \\ \hline
+\hline
+\textbf{Rep} & \textbf{Nbr} & \textbf{Désignation} \\ \hline
+\end{tabular}
+\end{center}
+
+
+\end{multicols}
+
+
+\begin{center}
+\includegraphics[width=.8\linewidth]{images/fig_02}
+\end{center}
+\fi
+\end{document}
+
+
